@@ -72,6 +72,11 @@ nav a {
     padding: 14px 20px;
     text-decoration: none;
     margin-left: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 30px;
+}
+
+nav a:last-child {
     margin-right: 20px;
 }
 
@@ -94,12 +99,18 @@ nav a:hover {
     background-color: #16D2FB;
     color: white;
     border-radius: 30px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 .container {
     padding: 20px;
 }
 
 /* SOBRE NÓS */
+section {
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
 #about h1 {
     font-family: 'Horta', Arial, sans-serif;
     font-size: 2em;
@@ -136,3 +147,57 @@ footer {
     font-family: 'gliker', Arial, sans-serif;
     font-size: 1em;
 }
+
+
+/* PÁGINA DE LOGIN TESTE */
+.ld-ripple {
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  
+  .ld-ripple div {
+    position: absolute;
+    border: 4px solid #fff;
+    opacity: 1;
+    border-radius: 50%;
+    animation: ld-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+  }
+  
+  .ld-ripple div:nth-child(2) {
+    animation-delay: -0.5s;
+  }
+  
+  @keyframes ld-ripple {
+    0% {
+      top: 36px;
+      left: 36px;
+      width: 0;
+      height: 0;
+      opacity: 0;
+    }
+  
+    4.9% {
+      top: 36px;
+      left: 36px;
+      width: 0;
+      height: 0;
+      opacity: 0;
+    }
+  
+    5% {
+      top: 36px;
+      left: 36px;
+      width: 0;
+      height: 0;
+      opacity: 1;
+    }
+  
+    100% {
+      top: 0px;
+      left: 0px;
+      width: 72px;
+      height: 72px;
+      opacity: 0;
+    }
+  }
