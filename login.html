@@ -3,38 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Registro de Usuário</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body id="login-body">
-  <header>
+
+  <header id="header-escuro">
     <div class="logo">
         <a href="home-page.html">
-            <img id="logo-peixe-louco" src="assets/imagens/full-peixe-logo.png" alt="Logo somente do Peixe">
+            <img id="logo-peixe-louco-alt" src="assets/imagens/full-peixe-logo-alt.png" alt="Logo somente do Peixe">
         </a>
     </div>
     
     <nav>
-        <a href="apoia.html">Apoia-se</a>
-        <a href="#about">Sobre Nós</a>
+        <a href="resgistro.html">Registrar</a>
         <a href="disciplinas.html">Disciplinas</a>
-        <a href="#contact">Contato</a>
+        <a href="apoia.html">Apoia-se</a>
+        <a href="home-page.html">Sobre Nós</a>
+        <a href="contato.html">Contato</a>
     </nav>
   </header>
 
   <section id="login-box">
-    <h1>Login</h1>
+    <div id="login-div">
+        <h1>Login</h1>
         <form action="#" method="POST">
             <div class="login">
                 <label for="username" id="usuario">Usuário</label>
-                <input type="text" id="usuario" name="username" required>
+                <input type="text" id="usuario" name="username" placeholder="  Seu melhor email" required>
             </div>
             <div class="login">
                 <label for="password" id="senha">Senha</label>
-                <input type="password" id="senha" name="password" required>
+                    <input type="password" id="senha" name="password" placeholder="  Senha maneira" required>
             </div>
             <button type="submit" id="entrar">Entrar</button>
         </form>
+    </div>
   </section>
 
   <footer id="footer">

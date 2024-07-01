@@ -21,12 +21,12 @@
 
 /* GERAL */
 body {
-    font-family: 'Gliker' ,Arial, sans-serif;
+    font-family: 'Gliker Regular', Arial, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #15AAEB;
-    color: #ffffff;
+    background-color: #ffffff;
+    color: #1A4789;
 }
 
 /* HEADER */
@@ -165,25 +165,38 @@ footer {
 
 /* PÁGINA DE LOGIN */
 #login-body {
-    background-color: #ffffff;
+    background-color: #1A4789;
 }
 
 #login-box {
     background-color: #1A4789;
     color: white;
-    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 80vh;
+    width: 100%;
 }
 
+#login-div {
+    box-sizing: border-box;
+    width: 30%;
+    text-align: left;
+    height: 50%;
+}
 
-#login-body footer {
-    background-color: #ffffff;
-    color: #1A4789;
+#header-escuro {
+    background-color: #1A4789;
+}
+
+#header-escuro nav a {
+    color: #ffffff;
 }
 
 .login {
     margin-bottom: 15px;
-    text-align: left;
+    /* text-align: left; */
+    width: 100%;
 }
 
 .login label {
@@ -192,29 +205,35 @@ footer {
 }
 
 .login input {
-    width: 20%;
-    padding: 10px;
-    border: 1px solid #ccc;
+    padding: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: none;
     border-radius: 3px;
+}
+
+.login input::placeholder {
+    color: #c2c0c0;
 }
 
 #login-box h1{
     font-family: 'Horta', Arial, sans-serif;
-    margin-left: 800px;
+    font-size: 3em;
+    text-align: center;
 }
 
 #usuario {
     font-family: 'Gliker Regular', Arial, sans-serif;
-    margin-left: 800px;
+    width: 100%;
 }
 
 #senha {
     font-family: 'Gliker Regular', Arial, sans-serif;
-    margin-left: 800px;
+    width: 100%;
 }
 
 #entrar {
-    width: 21%;
+    width: 100%;
     padding: 10px;
     border: none;
     border-radius: 3px;
@@ -223,13 +242,11 @@ footer {
     font-family: 'Gliker Regular', Arial, sans-serif;
     font-size: 16px;
     cursor: pointer;
-    margin-left: 800px;
 }
 
 #entrar:hover {
     background-color: #720c68;
 }
-
 
 /* Apoia.html */
 #apoia {
@@ -246,3 +263,71 @@ footer {
     font-family: 'Gliker Regular', Arial, sans-serif;
     font-weight: normal;
 }
+
+/* pag de registro*/
+
+#register-box {
+    display: flex;
+    background-color: #1A4789;
+    width: 100%;
+    text-align: left;
+    justify-content: center;
+    min-height: 80vh;
+}
+
+#register-div {
+    box-sizing: border-box;
+    width: 30%;
+    height: 100%;
+}
+
+#register-box h1 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-family: 'Horta', Arial, sans-serif;
+    font-size: 3em;
+}
+.campos-registro {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.campos-registro label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.campos-registro input {
+    width: 100%;
+    padding: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: none;
+    border-radius: 3px;
+}
+
+#botao-registro {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: #Cd16bc;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#botao-registro:hover {
+    background-color: #720c68;
+}
+
+#fullname,
+#email,
+#usuario-rg,
+#senha-rg,
+#confirmar-senha,
+#botao-registro {
+    font-family: 'Gliker Regular', Arial, sans-serif;
+}
+
+/* PÁGINA DE CONTATO */
