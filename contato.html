@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
     <header>
@@ -24,57 +25,109 @@
         </nav>
     </header>
         
-        <!-- Informações de contato para desenvolvedores -->
-        <div class="developer">
-            <h3>Desenvolvedor Front-End</h3>
-            <p>Nome: Lucas Israel de Azevedo</p>
-            <p>Email: lucasazevedd@hotmail.com</p>
-            <p>Telefone: <a href="https://wa.me/5598983445700?text=Vim%20pelo%20seu%20trabalho%20no%20projeto%20Peixe%20Louco%20%F0%9F%90%9F">(98) 98344 5700</a><p>
-            <P>Instagram: @lucasazevedd</P>
-            <p>Linkedin: </p>
-            <p>GitHub: </p>
+    <div class="contact-page">
+        <!-- Company Card -->
+        <div class="company-card">
+            <h2>Nome da Empresa</h2>
+            <p>Endereço da Empresa</p>
+            <p>Email da Empresa</p>
+            <p>Telefone da Empresa</p>
+            <div class="social-links">
+                <a href="https://linkedin.com/company"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/company"><i class="fab fa-github"></i></a>
+                <a href="https://instagram.com/company"><i class="fab fa-instagram"></i></a>
+            </div>
         </div>
 
-        <div class="developer">
-            <h3>Desenvolvedor</h3>
-            <p>Nome: Gabriel Viana</p>
-            <p>Email: gabriel@hotmail.com</p>
-        </div>
+        <!-- Developers Cards -->
+        <div class="developers-cards">
+            <!-- <div class="developer-card">
+                <img src="/assets/imagens/Lucas-Profile-photo.png" alt="Foto do Desenvolvedor">
+                <h3>Lucas Israel de Azevedo</h3>
+                <p>Desenvolvedor Front-End</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/lucas-israel-de-azevedo-577015259/">Linkedin<i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/lucasazevedd">GitHub<i class="fab fa-github"></i></a>
+                    <a href="https://www.instagram.com/lucasazevedd/">Instagram<i class="fab fa-instagram"></i></a>
+                </div>
+            </div> -->
 
-        <div class="developer">
-            <h3>Desenvolvedor 3</h3>
-            <p>Nome: Pedro Santos</p>
-            <p>Email: pedro@seudomínio.com</p>
-            <p>Telefone: (XX) XXXX-XXXX</p>
-        </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="/assets/imagens/Lucas-Profile-photo.png" alt="Foto do Desenvolvedor">
+                        <h3>Lucas Israel de Azevedo</h3>
+                        <p>Desenvolvedor Front-End</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/lucas-israel-de-azevedo-577015259/" target="_blank">
+                                <button class="button2">Linkedin <i class="fab fa-linkedin"></i></button>
+                            </a>
+                            <a href="https://github.com/lucasazevedd" target="_blank">
+                                <button class="button2">GitHub <i class="fab fa-github"></i></button>
+                            </a>
+                            <a href="https://www.instagram.com/lucasazevedd/" target="_blank">
+                                <button class="button2">Instagram <i class="fab fa-instagram"></i></button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-        <div class="developer">
-            <h3>Desenvolvedor 4</h3>
-            <p>Nome: Ana Souza</p>
-            <p>Email: ana@seudomínio.com</p>
-            <p>Telefone: (XX) XXXX-XXXX</p>
-        </div>
-
-        <!-- Informações de contato da empresa -->
-        <div class="contact-info">
-            <h3>Informações da Empresa</h3>
-            <p>Email Geral: contato@seudomínio.com</p>
-            <p>Telefone Geral: (XX) XXXX-XXXX</p>
-        </div>
-
-        <!-- Redes sociais da empresa -->
-        <div class="social-icons">
-            <h3>Redes Sociais</h3>
-            <a href="#">Facebook</a>
-            <a href="#">Twitter</a>
-            <a href="#">Instagram</a>
-            <!-- Adicione mais redes sociais conforme necessário -->
+            <div class="developer-card">
+                <img src="dev2.jpg" alt="Foto do Desenvolvedor">
+                <h3>Nome do Desenvolvedor 2</h3>
+                <p>Função</p>
+                <div class="social-links">
+                    <a href="https://linkedin.com/dev2"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/dev2"><i class="fab fa-github"></i></a>
+                    <a href="https://instagram.com/dev2"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="developer-card">
+                <img src="dev3.jpg" alt="Foto do Desenvolvedor">
+                <h3>Nome do Desenvolvedor 3</h3>
+                <p>Função</p>
+                <div class="social-links">
+                    <a href="https://linkedin.com/dev3"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/dev3"><i class="fab fa-github"></i></a>
+                    <a href="https://instagram.com/dev3"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="developer-card">
+                <img src="dev4.jpg" alt="Foto do Desenvolvedor">
+                <h3>Nome do Desenvolvedor 4</h3>
+                <p>Função</p>
+                <div class="social-links">
+                    <a href="https://linkedin.com/dev4"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/dev4"><i class="fab fa-github"></i></a>
+                    <a href="https://instagram.com/dev4"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
         </div>
     </div>
 
-    <footer id="footer">
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <img src="/assets/imagens/Lucas-Profile-photo.png" alt="Foto do Desenvolvedor">
+                <h3>Lucas Israel de Azevedo</h3>
+                <p>Desenvolvedor Front-End</p>
+            </div>
+            <div class="flip-card-back">
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/lucas-israel-de-azevedo-577015259/">Linkedin<i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/lucasazevedd">GitHub<i class="fab fa-github"></i></a>
+                    <a href="https://www.instagram.com/lucasazevedd/">Instagram<i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <footer id="footer">
         <p>© 2024 Peixe Louco 🐟. Todos os direitos reservados.</p>
-    </footer>
+    </footer> -->
 
 </body>
 </html>
