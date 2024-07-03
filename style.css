@@ -407,14 +407,12 @@ footer {
     color: #0077b5;
 }
 
-/* TESTE */
-
 .flip-card {
     background-color: transparent;
     width: 200px;
     height: 300px;
     perspective: 1000px;
-    font-family: 'Gliker Regular', sans-serif;
+    font-family: Arial, sans-serif;
   }
   
   .flip-card-inner {
@@ -456,9 +454,12 @@ footer {
   }
   
   .flip-card-back {
+    display: flex;
     background-color: #ffffff; 
     color: #1A4789;
     transform: rotateY(180deg);
+    justify-content: center;
+    align-items: center;
   }
 
   .button2 {
@@ -472,13 +473,14 @@ footer {
     cursor: pointer;
     font-size: 18px;
     border-radius: 0.5em;
-    background: #e8e8e8;
-    border: 1px solid #e8e8e8;
+    background: #ffffff;
+    border: none;
     box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+    width: 100%;
   }
   
   .button2:active {
-    color: #666;
+    color: #ffffff;
     box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
   }
   
@@ -514,7 +516,7 @@ footer {
   
   .button2:hover {
     color: #ffffff;
-    border: 1px solid #1A4789;
+    border: none;
   }
   
   .button2:hover:before {
@@ -529,3 +531,26 @@ footer {
     transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
   }
   
+  #linkedinButton:hover:after{
+    background-color: #0e76a8;
+  }
+
+  #linkedinButton:active{
+    background-color: #0e76a8;
+  }
+
+  #githubButton:hover:after{
+    background-color: #171515;
+  }
+
+  #githubButton:active{
+    background-color: #171515;
+  }
+
+  #instagramButton:hover:after{
+    background-color: #DD2A7B;
+  }
+
+  #instagramButton:active{
+    background-color: #DD2A7B;
+  }
