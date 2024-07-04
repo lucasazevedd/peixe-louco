@@ -90,68 +90,203 @@ nav::after {
     /* background-color: #ccc;*/
 }
 
-nav a:hover {
-    background-color: #15386c;
-    color: white;
-    border-radius: 30px;
-    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.5);
+#nav-button-entrar {
+    box-shadow: none;
+    font-family: 'Gliker Regular';
+    color: #1A4789;
+    padding: 1em;
+    border-radius: 15px;
 }
+
+#nav-button-entrar:active{
+    box-shadow: none;
+  }
+
+#nav-button-entrar:before{
+    box-shadow: none;
+  }
+
+#nav-button-entrar:hover {
+    color: #ffffff;
+  }
+
+#nav-buttons{
+    box-shadow: none;
+    font-family: 'Gliker Regular';
+    color: #1A4789;
+    padding: 1em;
+    border-radius: 15px;
+  }
+
+  #nav-buttons:active{
+    box-shadow: none;
+  }
+
+  #nav-buttons:before{
+    box-shadow: none;
+  }
+
+  #nav-buttons:hover {
+    color: #ffffff;
+  }
+
 .container {
     padding: 20px;
 }
 
+/* HOME-PAGE */
+
 /* PRIMEIRA SECTION */
 .welcome-section {
     display: flex;
-    width: 100%;
-    height: 100vh;
-    background-color: #ffffff;
-    box-sizing: border-box;
-    display: flex;
     justify-content: center;
     align-items: center;
+    height: 80vh;
 }
 
-.welcome-section h1 {
-    font-size: 8em;
+.welcome-content {
+    text-align: center;
+    color: #1A4789;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.welcome-content h1 {
+    font-size: 5em;
+    margin-bottom: 20px;
     font-family: 'Horta';
 }
 
+.welcome-content p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+#cta-button {
+    font-family: 'Gliker Regular';
+    padding: 15px 30px;
+    font-size: 18px;
+    color: #1A4789;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 30vh;
+}
+
+#cta-button:hover {
+    color: #ffffff;
+}
+
 .welcome-section img {
-    height: 40vh;
+    height: 50vh;
+}
+/* FIM PRIMEIRA SECTION */
+
+/*seção 2(homepage) */
+.homepg-s2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
 }
 
-/* SOBRE NÓS */
-#about {
-    margin-left: 80px;
-    margin-right: 80px;
+/* seção 3(homepage) */ 
+.homepg-s3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
 }
 
-#about h1 {
-    font-family: 'Horta', Arial, sans-serif;
-    font-size: 2em;
+/* seção 4(homepage) */
+.homepage-s4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
 }
 
-#about p {
-    font-family: 'Gliker Regular', Arial, sans-serif;
-    font-weight: normal;
+.buttondisc {
+    display: inline-block;
+    transition: all 0.2s ease-in;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    color: #090909;
+    padding: 0.7em 1.7em;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 0.5em;
+    background: #ffffff;
+    border: none;
+    box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+    width: 50%;
+  }
+  
+  .buttondisc:active {
+    color: #ffffff;
+    box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
+  }
+  
+  .buttondisc:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.25);
+    top: 100%;
+    width: 140%;
+    height: 180%;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+  }
+  
+  .buttondisc:after {
+    content: "";
+    position: absolute;
+    left: 55%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.45);
+    top: 180%;
+    width: 160%;
+    height: 190%;
+    background-color: #1A4789;
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+  }
+  
+  .buttondisc:hover {
+    color: #ffffff;
+    border: none;
+  }
+  
+  .buttondisc:hover:before {
+    top: -35%;
+    background-color: #1A4789;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+  }
+  
+  .buttondisc:hover:after {
+    top: -45%;
+    background-color: #1A4789;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+  }
+
+#button-disciplinas {
+    font-family: "Gliker Regular" ;
+    color: #1A4789;
 }
 
-/* CONTATO */
-#contact {
-    margin-left: 80px;
-    margin-right: 80px;
+#button-disciplinas:hover {
+    color: #ffffff;
 }
 
-#contact h1{
-    font-family: 'Horta', Arial, sans-serif;
-    font-size: 2em;
-}
 
-#contact p{
-    font-family: 'Gliker Regular', Arial, sans-serif;
-    font-weight: normal;
-}
 
 /* FOOTER */
 footer {

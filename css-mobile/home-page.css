@@ -1,0 +1,26 @@
+@media (max-width: 480px) {
+    header {
+        align-items: center;
+    }
+
+    #nav-buttons {
+        display: none;
+    }
+
+    #nav-button-entrar {
+       margin-left: auto;
+       position: absolute;
+       padding: 0;
+       margin-top: 0;
+    }
+
+    .logo {
+        display: flex;
+    }
+
+    .logo img {
+        height: 5vh;
+        margin-left: 30px;
+    }
+
+}

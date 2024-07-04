@@ -5,43 +5,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Peixe Louco</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css-mobile/home-page.css">
 </head>
 <body>
     <header>
         <div class="logo">
             <a href="home-page.html">
-                <img id="logo-peixe-louco" src="assets/imagens/full-peixe-logo.png" alt="Logo somente do Peixe com o Nome">
+                <img id="logo-peixe-louco" 
+                src="assets/imagens/full-peixe-logo.png"
+                srcset="assets/imagens/peixe-icon.png 481w, assets/imagens/full-peixe-logo.png 480w" 
+                sizes="(max-width: 480px) 100vw, 50px" alt="Logo somente do Peixe com o Nome">
             </a>
         </div>
 
         <nav>
-            <a href="login.html">Entrar</a>
-            <a href="resgistro.html">Registrar</a>
-            <a href="disciplinas.html">Disciplinas</a>
-            <a href="apoia.html">Apoia-se</a>
-            <a href="#about">Sobre Nós</a>
-            <a href="contato.html">Contato</a>
+            <a href="login.html"><button class="button2" id="nav-button-entrar">Entrar</button></a>
+            <a href="resgistro.html"><button class="button2" id="nav-buttons">Registrar</button></a>
+            <a href="disciplinas.html"><button class="button2" id="nav-buttons">Disciplinas</button></a>
+            <a href="apoia.html"><button class="button2" id="nav-buttons">Apoia-se</button></a>
+            <a href="#about"><button class="button2" id="nav-buttons">Sobre Nós</button></a>
+            <a href="contato.html"><button class="button2" id="nav-buttons">Contato</button></a>
         </nav>
     </header>
 
-    <section>
-        <div class="welcome-section">
-            <img id="logo-peixe-louco" src="assets/imagens/peixe-logo-aquario.png" alt="Logo somente do Peixe">
-            <!-- <h1>PEIXE LOUCO</h1> --> 
+    <section class="welcome-section">
+        <div class="welcome-content">
+            <img id="logo-peixe-louco" src="assets/imagens/logo-aquario-nome.png" alt="Logo somente do Peixe">
+            <!-- <h1>PEIXE LOUCO</h1> -->
+            <p>Um novo jeito de aprender</p>
+            <button class="button2" id="cta-button">Comece Agora</button>
         </div>
     </section>
 
-    <!-- <section id="about"> 
-        <h1>SOBRE NÓS</h1>
-        <p>Bem-vindo ao Peixe Louco! Somos uma organização dedicada a fornecer educação de alta qualidade em diversas disciplinas. Nossa missão é inspirar e capacitar nossos alunos a alcançar seus objetivos acadêmicos e profissionais.</p>
-        <p>Nossa equipe é composta por profissionais experientes e apaixonados pela educação, comprometidos em criar um ambiente de aprendizado estimulante e inclusivo.</p>
-        <p>Junte-se a nós e descubra como podemos ajudá-lo a atingir seu pleno potencial!</p>
-    </section> -->
+    <section class="homepg-s2">
+        <div class="welcome-content">
+            <h1>Aprenda com o Peixe Louco!</h1>
+            <p>Aqui você irá aprender enquanto joga de forma simples, rápida e eficiente</p>
+        </div>
+    </section>
 
-    <!-- <section id="contact">
-        <h1>CONTATO</h1>
-        <p></p>
-    </section> -->
+    <section class="homepg-s3">
+        <div class="welcome-content">
+            <h1>Aprendizado eficiente</h1>
+            <p>Você é aquele tipo de pessoa que fica entediado enquanto estuda? </p>
+            <p>Bom, com uma série de jogos, os usuários irão ficar instigados a continuar e ao mesmo tempo irão aprender. </p>
+        </div>
+    </section>
+
+    <section class="homepg-s4">
+        <di class="welcome-content">
+            <h1>Disciplinas</h1>
+            <p>Aqui tem muitas disciplinas que são englobadas no peixe louco, clique aqui para ver a lista </p>
+            <button class="buttondisc" id="button-disciplinas"> Disciplinas </button>
+        </div>
+    </section>
+
+    <section class="homepg-s5">
+        <div>
+            <p></p>
+        </div>
+    </section>
             
     <footer id="footer">
         <p>© 2024 Peixe Louco 🐟. Todos os direitos reservados.</p>
