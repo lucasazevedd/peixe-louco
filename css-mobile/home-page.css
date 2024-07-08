@@ -1,6 +1,9 @@
 @media (max-width: 480px) {
     header {
+        display: flex;
         align-items: center;
+        padding: 10px;
+        justify-content: space-between;
     }
 
     #nav-buttons {
@@ -8,19 +11,27 @@
     }
 
     #nav-button-entrar {
-       margin-left: auto;
-       position: absolute;
-       padding: 0;
-       margin-top: 0;
+        display: flex;
+        margin: 0;
+        width: auto;
     }
 
     .logo {
         display: flex;
+        align-items: center;
     }
 
     .logo img {
         height: 5vh;
-        margin-left: 30px;
+        width: auto;
+        margin: 30px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
     }
 
 }

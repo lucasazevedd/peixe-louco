@@ -206,6 +206,7 @@ nav::after {
     justify-content: center;
     align-items: center;
     height: 80vh;
+    text-align: center;
 }
 
 .buttondisc {
@@ -712,3 +713,26 @@ footer {
   #instagramButton:active{
     background-color: #DD2A7B;
   }
+
+  /* Disciplinas */
+
+.disciplinasDiv {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.disciplina {
+    background-color: #1A4789;
+    color: white;
+    padding: 200px 100px;
+    border-radius: 15px;
+    text-align: center;
+    width: 150px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.disciplina:hover {
+    background-color: #DD2A7B;
+}
