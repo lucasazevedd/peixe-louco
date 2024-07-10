@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peixe Louco</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css-mobile/home-page.css">
+    <script defer src="menu.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="home-page.html">
+                <img id="logo-peixe-louco" 
+                src="assets/imagens/full-peixe-logo.png"
+                srcset="assets/imagens/peixe-icon.png 481w, assets/imagens/full-peixe-logo.png 480w" 
+                sizes="(max-width: 480px) 100vw, 50px" alt="Logo somente do Peixe com o Nome">
+            </a>
+        </div>
+
+        <nav id="menu">
+            <a href="login.html"><button class="button2" id="nav-buttons">Entrar</button></a>
+            <a href="resgistro.html"><button class="button2" id="nav-buttons">Registrar</button></a>
+            <a href="disciplinas.html"><button class="button2" id="nav-buttons">Disciplinas</button></a>
+            <a href="apoia.html"><button class="button2" id="nav-buttons">Apoia-se</button></a>
+            <a href="#about"><button class="button2" id="nav-buttons">Sobre Nós</button></a>
+            <a href="contato.html"><button class="button2" id="nav-buttons">Contato</button></a>
+        </nav>
+
+        <div class="menu-icon">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+
+    </header>
+
+<div class="mtmlevel">
+    <h1>Selecione um Nível</h1>
+    <div class="levels">
+        <div class="level" onclick="selectLevel(1)">Nível 1</div>
+        <div class="level" onclick="selectLevel(2)">Nível 2</div>
+        <div class="level" onclick="selectLevel(3)">Nível 3</div>
+        <div class="level" onclick="selectLevel(4)">Nível 4</div>
+        <div class="level" onclick="selectLevel(5)">Nível 5</div>
+    </div>
+</div>
+
+<script src="mtm.js"></script>

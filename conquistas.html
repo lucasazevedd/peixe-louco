@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peixe Louco</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css-mobile/home-page.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="home-page.html">
+                <img id="logo-peixe-louco" 
+                src="assets/imagens/full-peixe-logo.png"
+                srcset="assets/imagens/peixe-icon.png 481w, assets/imagens/full-peixe-logo.png 480w" 
+                sizes="(max-width: 480px) 100vw, 50px" alt="Logo somente do Peixe com o Nome">
+            </a>
+        </div>
+
+        <nav>
+            <a href="login.html"><button class="button2" id="nav-button-entrar">Entrar</button></a>
+            <a href="resgistro.html"><button class="button2" id="nav-buttons">Registrar</button></a>
+            <a href="disciplinas.html"><button class="button2" id="nav-buttons">Disciplinas</button></a>
+            <a href="apoia.html"><button class="button2" id="nav-buttons">Apoia-se</button></a>
+            <a href="#about"><button class="button2" id="nav-buttons">Sobre Nós</button></a>
+            <a href="contato.html"><button class="button2" id="nav-buttons">Contato</button></a>
+        </nav>
+    </header>
+    <div class="achievements-container">
+        <h1 class="achievements-title">Conquistas</h1>
+        <div class="achievements-grid">
+            <div class="achievement-item" onclick="showModal('modal1')">
+                <img src="badge1.png" alt="Insígnia 1" class="achievement-icon">
+                <p class="achievement-name">Conquista 1</p>
+            </div>
+            <div class="achievement-item" onclick="showModal('modal2')">
+                <img src="badge2.png" alt="Insígnia 2" class="achievement-icon">
+                <p class="achievement-name">Conquista 2</p>
+            </div>
+            <div class="achievement-item" onclick="showModal('modal3')">
+                <img src="badge3.png" alt="Insígnia 3" class="achievement-icon">
+                <p class="achievement-name">Conquista 3</p>
+            </div>
+            <div class="achievement-item" onclick="showModal('modal4')">
+                <img src="badge4.png" alt="Insígnia 4" class="achievement-icon">
+                <p class="achievement-name">Conquista 4</p>
+            </div>
+            <!-- Adicione mais conquistas conforme necessário -->
+        </div>
+    </div>
+
+    <!-- Modals -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal1')">&times;</span>
+            <h2>Conquista 1</h2>
+            <p>Informações sobre como obter a Conquista 1.</p>
+        </div>
+    </div>
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal2')">&times;</span>
+            <h2>Conquista 2</h2>
+            <p>Informações sobre como obter a Conquista 2.</p>
+        </div>
+    </div>
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal3')">&times;</span>
+            <h2>Conquista 3</h2>
+            <p>Informações sobre como obter a Conquista 3.</p>
+        </div>
+    </div>
+    <div id="modal4" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal4')">&times;</span>
+            <h2>Conquista 4</h2>
+            <p>Informações sobre como obter a Conquista 4.</p>
+        </div>
+    </div>
+
+    <script src="achievements.js"></script>

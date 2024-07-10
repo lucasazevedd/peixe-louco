@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peixe Louco</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css-mobile/home-page.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="home-page.html">
+                <img id="logo-peixe-louco" 
+                src="assets/imagens/full-peixe-logo.png"
+                srcset="assets/imagens/peixe-icon.png 481w, assets/imagens/full-peixe-logo.png 480w" 
+                sizes="(max-width: 480px) 100vw, 50px" alt="Logo somente do Peixe com o Nome">
+            </a>
+        </div>
+
+        <nav>
+            <a href="login.html"><button class="button2" id="nav-button-entrar">Entrar</button></a>
+            <a href="resgistro.html"><button class="button2" id="nav-buttons">Registrar</button></a>
+            <a href="disciplinas.html"><button class="button2" id="nav-buttons">Disciplinas</button></a>
+            <a href="apoia.html"><button class="button2" id="nav-buttons">Apoia-se</button></a>
+            <a href="#about"><button class="button2" id="nav-buttons">Sobre Nós</button></a>
+            <a href="contato.html"><button class="button2" id="nav-buttons">Contato</button></a>
+        </nav>
+    </header>
+
+
+    <div class="profile-container">
+        <div class="profile-header">
+            <img src="profile-picture.jpg" alt="Foto do Perfil" class="profile-picture">
+            <h1 class="profile-name">Nome do Usuário</h1>
+            <p class="profile-bio">Esta é a biografia do usuário. Aqui você pode adicionar uma breve descrição sobre você.</p>
+        </div>
+        <div class="profile-details">
+            <h2 onclick="toggleDetails()" class="details-header">
+                Detalhes <span id="arrow" class="arrow-down">&#9660;</span>
+            </h2>
+            <div id="details-content" class="details-content">
+                <p><strong>Email:</strong> usuario@example.com</p>
+                <p><strong>Telefone:</strong> (99) 99999-9999</p>
+                <p><strong>Endereço:</strong> Rua Exemplo, 123, Cidade, Estado, País</p>
+            </div>
+        </div>
+
+        <script src="perfil.js"></script>
+</body>

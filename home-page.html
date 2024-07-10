@@ -6,6 +6,7 @@
     <title>Peixe Louco</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="/css-mobile/home-page.css">
+    <script defer src="menu.js"></script>
 </head>
 <body>
     <header>
@@ -18,14 +19,21 @@
             </a>
         </div>
 
-        <nav>
-            <a href="login.html"><button class="button2" id="nav-button-entrar">Entrar</button></a>
+        <nav id="menu">
+            <a href="login.html"><button class="button2" id="nav-buttons">Entrar</button></a>
             <a href="resgistro.html"><button class="button2" id="nav-buttons">Registrar</button></a>
             <a href="disciplinas.html"><button class="button2" id="nav-buttons">Disciplinas</button></a>
             <a href="apoia.html"><button class="button2" id="nav-buttons">Apoia-se</button></a>
             <a href="#about"><button class="button2" id="nav-buttons">Sobre Nós</button></a>
             <a href="contato.html"><button class="button2" id="nav-buttons">Contato</button></a>
         </nav>
+
+        <div class="menu-icon">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+
     </header>
 
     <section class="welcome-section">
@@ -33,7 +41,8 @@
             <img id="logo-peixe-louco" src="assets/imagens/logo-aquario-nome.png" alt="Logo somente do Peixe">
             <!-- <h1>PEIXE LOUCO</h1> -->
             <p>Um novo jeito de aprender</p>
-            <button class="button2" id="cta-button">Comece Agora</button>
+            <a href="resgistro.html"><button class="button2" id="cta-button">Comece agora</button></a>
+            <a href="login.html"><button class="button2" id="cta-button">Já tenho uma conta</button></a>
         </div>
     </section>
 
@@ -52,14 +61,14 @@
 </section>
     
     <section class="homepg-s2">
-        <div class="welcome-content">
+        <div class="welcome-content" id="homepg-disc">
             <h1>Aprenda com o Peixe Louco!</h1>
             <p>Aqui você irá aprender enquanto joga de forma simples, rápida e eficiente</p>
         </div>
     </section>
 
     <section class="homepg-s3">
-        <div class="welcome-content">
+        <div class="welcome-content" id="homepg-disc">
             <h1>Aprendizado eficiente</h1>
             <p>Você é aquele tipo de pessoa que fica entediado enquanto estuda? </p>
             <p>Bom, com uma série de jogos, os usuários irão ficar instigados a continuar e ao mesmo tempo irão aprender. </p>

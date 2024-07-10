@@ -2,16 +2,17 @@
     header {
         display: flex;
         align-items: center;
-        padding: 10px;
+        padding: 15px;
         justify-content: space-between;
-        margin-top: 10px;
+        margin-top: 20px;
+        height: 20px;
     }
 
     #nav-buttons {
-        display: none;
+        /* display: none; */
     }
 
-    #nav-button-entrar {
+    /* #nav-button-entrar {
         position: absolute;
         display: flex;
         margin: 0;
@@ -20,7 +21,7 @@
         transform: translateY(-50%);
         right: 0;
         margin-right: 10px;
-    }
+    } */
 
     .logo {
         display: flex;
@@ -28,16 +29,69 @@
     }
 
     .logo img {
+        position: absolute;
+        display: flex;
         height: 5vh;
         width: auto;
         margin: 30px;
         margin-top: 0;
         margin-bottom: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
     }
 
     nav {
-        display: flex;
-        align-items: center;
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #1A4789;
+        position: absolute;
+        top: 60px;
+        right: 0;
     }
 
+    nav a {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .menu-icon {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+        display: block;
+        cursor: pointer;
+        padding: 8px 16px;
+        margin-right: 15px;
+    }
+
+    .menu-icon .bar1, .menu-icon .bar2, .menu-icon .bar3 {
+        width: 25px;
+        height: 3px;
+        background-color: #1A4789;
+        margin: 4px 0;
+        transition: 0.4s;
+        border-radius: 3px;
+        color: #ffffff;
+    }
+
+    .change .bar1 {
+        -webkit-transform: rotate(-45deg) translate(-5px, 5px);
+        transform: rotate(-45deg) translate(-5px, 5px);
+    }
+
+    .change .bar2 {
+        opacity: 0;
+    }
+
+    .change .bar3 {
+        -webkit-transform: rotate(45deg) translate(-5px, -5px);
+        transform: rotate(45deg) translate(-5px, -5px);
+    }
+
+    nav.show {
+        display: block;
+    }
 }

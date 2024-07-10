@@ -1,0 +1,38 @@
+@media (max-width: 480px) {
+    header {
+        position: relative;
+        align-items: center;
+        padding: 10px;
+        justify-content: space-between;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+        margin: 20px;
+    }
+
+    .logo img {
+        position: absolute;
+        align-items: center;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 5vh;
+        width: auto;
+        margin: 0;
+    }
+
+    .company-card {
+        margin: 50px;
+    }
+    
+    nav {
+        display: none;
+    }
+
+    footer {
+        width: 90%;
+        padding: 20px;
+    }
+
+}
