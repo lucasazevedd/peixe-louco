@@ -8,8 +8,14 @@
         height: 20px;
     }
 
-    #nav-buttons {
-        
+    #nav-buttons.button2 {
+        box-shadow: none;
+        transition: none;
+        background: none;
+        color: #ffffff;
+        padding: 10px;
+        border: none;
+        margin: 0;
     }
 
     /* #nav-button-entrar {
@@ -54,6 +60,11 @@
     nav a {
         padding: 10px;
         text-align: center;
+        margin: 0;
+    }
+
+    nav a:last-child {
+        margin-right: 0;
     }
 
     .menu-icon {
@@ -93,5 +104,21 @@
 
     nav.show {
         display: block;
+    }
+
+    .homepg-s2, .homepg-s3, .homepg-s4, .homepg-s5 {
+        padding: 30px;
+    }
+
+    .welcome-content h1 {
+        font-size: 4em;
+    }
+
+    .welcome-content p {
+        font-size: 1.1em;
+    }
+    
+    .wave {
+        margin-bottom: 0;
     }
 }
