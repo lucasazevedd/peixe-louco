@@ -106,7 +106,7 @@
         display: block;
     }
 
-    .homepg-s2, .homepg-s3, .homepg-s4, .homepg-s5 {
+    .homepg-s2, .homepg-s3, .homepg-s4, .homepg-s5, .homepg-s6 {
         padding: 30px;
     }
 
@@ -117,8 +117,27 @@
     .welcome-content p {
         font-size: 1.1em;
     }
-    
+
     .wave {
-        margin-bottom: 0;
+        display: block;
+        margin: 0;
+        padding: 0;
+        height: auto;
+        overflow: hidden;
+        line-height: 0; 
     }
+
+    .wave svg {
+        display: block;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: auto;
+    }
+
+    footer {
+        width: 90%;
+        padding: 20px;
+    }
+
 }
