@@ -245,7 +245,8 @@ nav::after {
     align-items: center;
     height: 80vh;
     text-align: center;
-    background: linear-gradient(to bottom, #0e3b7e, #09234b)
+    background: linear-gradient(to bottom, #0e3b7e, #09234b);
+    margin-bottom: 0;
 }
 
 /* efeito de onda na home page */

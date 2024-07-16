@@ -95,38 +95,62 @@
         display: block;
     }
 
-    .homepg-s2, .homepg-s3, .homepg-s4, .homepg-s5, .homepg-s6 {
-        padding: 30px;
+    .welcome-content {
+        margin-top: 40px;
     }
 
     .welcome-content h1 {
-        font-size: 4em;
+        font-size: 3em;
     }
 
-    .welcome-content p {
-        font-size: 1.1em;
-    }
-
-    .wave {
-        display: block;
-        margin: 0;
-        padding: 0;
+    .disciplinasDiv {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
         height: auto;
-        overflow: hidden;
-        line-height: 0; 
     }
 
-    .wave svg {
-        display: block;
-        margin: 0;
-        padding: 0;
-        width: 100%;
+    .disciplina {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .disciplina img {
+        width: auto;
         height: auto;
+    }
+
+    .disciplina h1 {
+        font-size: 2em;
+        margin-top: 10px;
     }
 
     footer {
-        width: 90%;
+        width: 80%;
         padding: 20px;
     }
 
+    .btn {
+        font-family: 'Gliker Regular';
+        padding: 10px 20px;
+        font-size: 1em;
+        color: #1A4789;
+        background-color: #ffffff;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        width: 80%;
+        height: auto;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .btn:hover {
+        color: #ffffff;
+        background-color: #1A4789;
+    }
 }
