@@ -41,9 +41,68 @@
             <div id="details-content" class="details-content">
                 <p><strong>Email:</strong> usuario@example.com</p>
                 <p><strong>Telefone:</strong> (99) 99999-9999</p>
-                <p><strong>Endereço:</strong> Rua Exemplo, 123, Cidade, Estado, País</p>
+            </div>
+        </div>
+        <p></p>
+        <div>
+            <h2 onclick="toggleAchievements('achievements-content', 'achievements-arrow')" class="details-header">
+                Conquistas <span id="arrow" class="arrow-down">&#9660;</span>
+            </h2>
+            <div id="achievements-content" class="details-content">
+                <h1 class="achievements-title">Conquistas</h1>
+                <div class="achievements-grid">
+                    <div class="achievement-item" onclick="showModal('modal1')">
+                        <img src="badge1.png" alt="Insígnia 1" class="achievement-icon">
+                        <p class="achievement-name">Conquista 1</p>
+                    </div>
+                    <div class="achievement-item" onclick="showModal('modal2')">
+                        <img src="badge2.png" alt="Insígnia 2" class="achievement-icon">
+                        <p class="achievement-name">Conquista 2</p>
+                    </div>
+                    <div class="achievement-item" onclick="showModal('modal3')">
+                        <img src="badge3.png" alt="Insígnia 3" class="achievement-icon">
+                        <p class="achievement-name">Conquista 3</p>
+                    </div>
+                    <div class="achievement-item" onclick="showModal('modal4')">
+                        <img src="badge4.png" alt="Insígnia 4" class="achievement-icon">
+                        <p class="achievement-name">Conquista 4</p>
+                    </div>
+                    <!-- Adicione mais conquistas conforme necessário -->
+                </div>
             </div>
         </div>
 
+    
+        <!-- Modals -->
+        <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal1')">&times;</span>
+            <h2>Conquista 1</h2>
+            <p>Informações sobre como obter a Conquista 1.</p>
+        </div>
+    </div>
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal2')">&times;</span>
+            <h2>Conquista 2</h2>
+            <p>Informações sobre como obter a Conquista 2.</p>
+        </div>
+    </div>
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal3')">&times;</span>
+            <h2>Conquista 3</h2>
+            <p>Informações sobre como obter a Conquista 3.</p>
+        </div>
+    </div>
+    <div id="modal4" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal4')">&times;</span>
+            <h2>Conquista 4</h2>
+            <p>Informações sobre como obter a Conquista 4.</p>
+        </div>
+    </div>
+    
+        <script src="achievements.js"></script>
         <script src="perfil.js"></script>
 </body>

@@ -16,3 +16,18 @@ window.onclick = function(event) {
         }
     });
 }
+
+// Função para exibir ou esconder os detalhes
+function toggleAchievements(contentId, arrowId) {
+    const content = document.getElementById(contentId);
+    const arrow = document.getElementById(arrowId);
+    if (content.style.maxHeight && content.style.maxHeight !== "0px") {
+        content.style.maxHeight = "0px";
+        arrow.classList.remove('arrow-up');
+        arrow.classList.add('arrow-down');
+    } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+        arrow.classList.remove('arrow-down');
+        arrow.classList.add('arrow-up');
+    }
+}

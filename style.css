@@ -988,15 +988,15 @@ footer {
 }
 
 /* matematica niveis */
-
-.levels {
+/* Níveis: Básico */
+.levelsb {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
 }
 
-.level {
+.levelb {
     background-color: #007bff;
     color: #fff;
     padding: 15px 30px;
@@ -1005,18 +1005,84 @@ footer {
     transition: background-color 0.3s;
 }
 
-.level:hover {
+.levelb:hover {
     background-color: #CD16BC ;
 }
 
-.level.selected {
+.levelb.selected {
     background-color: #921285 ;
 }
 
-.mtmlevel {
+.mtmbasico {
     text-align: center;
     background-color: #fff;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
+}
+
+/* Níveis: Intermediário */
+.mtminter {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.levelsI {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.levelI {
+    background-color: #1A4789;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.levelI:hover {
+    background-color: #CD16BC ;
+}
+
+.levelI.selected {
+    background-color: #921285 ;
+}
+
+/*Níveis: Avançado */
+.mtmavan {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.levelsA {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.levelA {
+    background-color: #133364;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.levelA:hover {
+    background-color: #6e0c65 ;
+}
+
+.levelA.selected {
+    background-color: #921285 ;
 }
