@@ -145,7 +145,7 @@ nav::after {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80vh;
+    height: 100vh;
 }
 
 .welcome-content {
@@ -187,7 +187,7 @@ nav::after {
 }
 
 .welcome-section img {
-    height: 50vh;
+    width: 90%;
 }
 /* FIM PRIMEIRA SECTION */
 
