@@ -95,16 +95,28 @@
         display: block;
     }
 
-    .homepg-s2, .homepg-s3, .homepg-s4, .homepg-s5, .homepg-s6 {
-        padding: 30px;
+    .homepg-s2, .homepg-s3, .homepg-s4, .homepg-s5, .homepg-s6, .homepg-s7 {
+        padding: 20px;
     }
 
-    .welcome-content h1 {
-        font-size: 4em;
+    .welcome-content {
+        gap: 0;
+    }
+
+    .welcome-content div h1 {
+        font-size: 3em;
+    }
+
+    .page-content h1 {
+        font-size: 3.8em;
+    }
+
+    .page-content p {
+        font-size: 1.3em;
     }
 
     .welcome-content p {
-        font-size: 1.1em;
+        font-size: 1.3em;
     }
 
     .wave {
@@ -127,6 +139,27 @@
     footer {
         width: 90%;
         padding: 20px;
+    }
+
+    @media (max-width: 768px) {
+        .welcome-content {
+            flex-direction: column;
+            text-align: center;
+        }
+    
+        .welcome-content div {
+            max-width: 100%;
+            margin: 0;
+            padding: 10px;
+        }
+    
+        .welcome-content h1 {
+            font-size: 1.5em;
+        }
+    
+        .welcome-content p {
+            font-size: 1em;
+        }
     }
 
 }
