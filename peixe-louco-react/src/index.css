@@ -1,0 +1,32 @@
+/* ESTILOS GLOBAIS */
+
+/* FONTES */
+@font-face {
+  font-family: 'Horta';
+  src: url('assets/fontes/Horta.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gliker Regular';
+  src: url('assets/fontes/Gliker/Gliker-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gliker Bold';
+  src: url('assets/fontes/Gliker/Gliker-Bold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* GERAL */
+body {
+  font-family: 'Gliker Regular', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  color: #1A4789;
+}
