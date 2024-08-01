@@ -70,7 +70,9 @@
     border-radius: 10px;
     cursor: pointer;
     width: 30vh;
+    margin: 10px;
     margin-bottom: 20px;
+    margin-top: 0;
 }
 
 #cta-button:hover {
@@ -149,6 +151,7 @@
     text-align: center;
     background: linear-gradient(to bottom, #09234b, #041a3a);
     margin-bottom: 0;
+    padding-bottom: 20px;
 }
 
 /* efeito de onda na home page */

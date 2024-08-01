@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
 import Wave from '../../components/Wave/Wave';
+import image from '../../assets/imagens/peixe-logo-aquario.png';
 import './HomePage.css';
 
 function HomePage() {
@@ -13,13 +14,13 @@ function HomePage() {
           <div>
             <img 
               id="logo-peixe-louco" 
-              src="assets/imagens/peixe-logo-aquario.png" 
+              src={image}
               alt="Logo somente do Peixe" 
             />
           </div>
           <div>
             <h1>Junte-se ao Peixe Louco e Mergulhe no Conhecimento!</h1>
-            <p>Ei, aventureiro! Preparado para testar seus conhecimentos de um jeito totalmente novo? Venha competir, aprender e se divertir com nossos desafios de perguntas e respostas! Vamos lá, o mar do saber está te esperando!”</p>
+            <p>Ei, aventureiro! Preparado para testar seus conhecimentos de um jeito totalmente novo? Venha competir, aprender e se divertir com nossos desafios de perguntas e respostas! Vamos lá, o mar do saber está te esperando!</p>
             <a href="/registro"><button className="button2" id="cta-button">Comece agora</button></a>
             <a href="/login"><button className="button2" id="cta-button">Já tenho uma conta</button></a>
           </div>
