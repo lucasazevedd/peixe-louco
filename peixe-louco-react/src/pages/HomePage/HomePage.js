@@ -1,7 +1,7 @@
 import React from 'react';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
-import Wave from '../components/Wave';
+import Header from '../../components/Header/Header';
+import Footer from '../../components/Footer/Footer';
+import Wave from '../../components/Wave/Wave';
 import './HomePage.css';
 
 function HomePage() {
