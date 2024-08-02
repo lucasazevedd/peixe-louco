@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import logo from '../../assets/imagens/full-peixe-logo.png';
+import logoAlt from '../../assets/imagens/full-peixe-logo-alt.png';
 import './Header.css';
 
 function Header() {
@@ -18,8 +19,20 @@ function Header() {
     }
   };
 
+  const getImage = (pathname) => {
+    switch (pathname) {
+      case '/login':
+        return logoAlt;
+      case '/registro':
+        return logoAlt;
+      default:
+        return logo;
+    }
+  };
+
   const backgroundColor = getColor(location.pathname);
   const textColor = backgroundColor !== '#FFFFFF' ? '#FFFFFF' : '#1A4789';
+  const imageSrc = getImage(location.pathname);
 
   return (
     <header style={{backgroundColor, color: textColor}}>
@@ -27,7 +40,7 @@ function Header() {
         <Link to="/">
           <img 
             id="logo-peixe-louco" 
-            src={logo}
+            src={imageSrc}
             // IMPLEMENTAR VERSÃO MOBILE !!!
             // srcSet="assets/imagens/peixe-icon.png 481w, assets/imagens/full-peixe-logo.png 480w" 
             // sizes="(max-width: 480px) 100vw, 50px" 
