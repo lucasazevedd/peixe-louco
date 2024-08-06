@@ -1,6 +1,9 @@
 import React from 'react';
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
+import prtLogo from '../../assets/imagens/prt-logo.png';
+import mtmLogo from '../../assets/imagens/mtm-logo.png';
+import cncLogo from '../../assets/imagens/cnc-logo.png';
 import './DisciplinasPage.css';
 
 function DisciplinasPage() {
@@ -8,27 +11,27 @@ function DisciplinasPage() {
     <div>
       <Header />
       <section className="welcome-content" id="disciplinas">
-        <h1>Disciplinas</h1>
+        <h1 id="DISCIPLINAS">DISCIPLINAS</h1>
       </section>
 
       <div className="disciplinasDiv">
         <div className="disciplina">
           <a href="/prt-niveis">
-            <img id="prt-logo" src="assets/imagens/prt-logo.png" alt="prt logo" />
+            <img id="prt-logo" src={prtLogo} alt="prt logo" />
           </a>
           <h1>PORTUGUÊS</h1>
         </div>
         
         <div className="disciplina">
           <a href="/mtm-niveis">
-            <img id="mtm-logo" src="assets/imagens/mtm-logo.png" alt="mtm logo" />
+            <img id="mtm-logo" src={mtmLogo} alt="mtm logo" />
           </a>
           <h1>MATEMÁTICA</h1>
         </div>
         
         <div className="disciplina">
           <a href="/bio-niveis">
-            <img id="cnc-logo" src="assets/imagens/cnc-logo.png" alt="cnc logo" />
+            <img id="cnc-logo" src={cncLogo} alt="cnc logo" />
           </a>
           <h1>CIÊNCIAS</h1>
         </div>

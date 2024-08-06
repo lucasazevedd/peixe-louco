@@ -6,6 +6,7 @@ import RegisterPage from './pages/RegisterPage/RegisterPage';
 import ContactPage from './pages/ContactPage/ContactPage';
 import DisciplinasPage from './pages/DisciplinasPage/DisciplinasPage';
 import ApoiaPage from './pages/ApoiaPage/ApoiaPage';
+import Perfil from './pages/Perfil/Perfil';
 import './App.css';
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Route path="/contato" element={<ContactPage />} />
         <Route path="/disciplinas" element={<DisciplinasPage />} />
         <Route path="/apoia" element={<ApoiaPage />} />
+        <Route path="/perfil" element={<Perfil />} />
       </Routes>
     </div>
   );

@@ -1,11 +1,36 @@
   /* Disciplinas */
 
+.welcome-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.welcome-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    color: #1A4789;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 50px;
+}
+
+#DISCIPLINAS {
+    font-size: 4em;
+    font-family: 'Horta';
+    margin-bottom: 0;
+}
+
   .disciplinasDiv {
     display: flex;
     gap: 40px;
     justify-content: center;
     align-items: center;
-    height: 70vh;
+    height: auto;
 }
 .disciplina {
     display: block;
