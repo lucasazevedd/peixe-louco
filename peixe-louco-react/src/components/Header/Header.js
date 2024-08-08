@@ -1,17 +1,27 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import logo from '../../assets/imagens/full-peixe-logo.png';
 import logoAlt from '../../assets/imagens/full-peixe-logo-alt.png';
+import miniLogo from '../../assets/imagens/peixe-icon.png';
 import './Header.css';
 
 function Header() {
-
   const location = useLocation();
-  
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 480);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 480);
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   const getColor = (pathname) => {
     switch (pathname) {
       case '/login':
-        return '#1A4789';
       case '/registro':
         return '#1A4789';
       default:
@@ -19,10 +29,12 @@ function Header() {
     }
   };
 
-  const getImage = (pathname) => {
+  const getImage = (pathname, isMobile) => {
+    if (isMobile) {
+      return miniLogo;
+    }
     switch (pathname) {
       case '/login':
-        return logoAlt;
       case '/registro':
         return logoAlt;
       default:
@@ -32,24 +44,26 @@ function Header() {
 
   const backgroundColor = getColor(location.pathname);
   const textColor = backgroundColor !== '#FFFFFF' ? '#FFFFFF' : '#1A4789';
-  const imageSrc = getImage(location.pathname);
+  const imageSrc = getImage(location.pathname, isMobile);
+  const barColor = location.pathname === '/login' || location.pathname === '/registro' ? '#FFFFFF' : '#1A4789';
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
 
   return (
-    <header style={{backgroundColor, color: textColor}}>
+    <header style={{ backgroundColor, color: textColor }}>
       <div className="logo">
         <Link to="/">
           <img 
             id="logo-peixe-louco" 
             src={imageSrc}
-            // IMPLEMENTAR VERSÃO MOBILE !!!
-            // srcSet="assets/imagens/peixe-icon.png 481w, assets/imagens/full-peixe-logo.png 480w" 
-            // sizes="(max-width: 480px) 100vw, 50px" 
             alt="Logo somente do Peixe com o Nome" 
           />
         </Link>
       </div>
       
-      <nav id="menu">
+      <nav id="menu" className={menuOpen ? 'show' : ''}>
         <Link to="/login"><button className="button2" id="nav-buttons">Entrar</button></Link>
         <Link to="/registro"><button className="button2" id="nav-buttons">Registrar</button></Link>
         <Link to="/disciplinas"><button className="button2" id="nav-buttons">Disciplinas</button></Link>
@@ -57,10 +71,10 @@ function Header() {
         <Link to="/contato"><button className="button2" id="nav-buttons">Contato</button></Link>
       </nav>
       
-      <div className="menu-icon">
-        <div className="bar1"></div>
-        <div className="bar2"></div>
-        <div className="bar3"></div>
+      <div className={`menu-icon ${menuOpen ? 'change' : ''}`} onClick={toggleMenu}>
+        <div className="bar1" style={{ backgroundColor: barColor }}></div>
+        <div className="bar2" style={{ backgroundColor: barColor }}></div>
+        <div className="bar3" style={{ backgroundColor: barColor }}></div>
       </div>
     </header>
   );

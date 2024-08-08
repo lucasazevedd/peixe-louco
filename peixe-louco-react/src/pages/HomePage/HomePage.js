@@ -18,7 +18,7 @@ function HomePage() {
               alt="Logo somente do Peixe" 
             />
           </div>
-          <div>
+          <div class="homepg-s1">
             <h1>Junte-se ao Peixe Louco e Mergulhe no Conhecimento!</h1>
             <p>Ei, aventureiro! Preparado para testar seus conhecimentos de um jeito totalmente novo? Venha competir, aprender e se divertir com nossos desafios de perguntas e respostas! Vamos lá, o mar do saber está te esperando!</p>
             <a href="/registro"><button className="button2" id="cta-button">Comece agora</button></a>

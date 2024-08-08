@@ -154,19 +154,6 @@
     padding-bottom: 20px;
 }
 
-/* efeito de onda na home page */
-.wave {
-    position: relative;
-    width: 100%;
-    height: 150px;
-    margin-bottom: 7%;
-    
-}
-.wave path {
-    fill: url(#waveGradient);
-}
-/*************************/
-
 /* botão disciplinas e outros na home page */
 .buttondisc {
     display: inline-block;
@@ -323,4 +310,61 @@
 
 #button-disciplinas:hover {
     color: #ffffff;
+}
+
+/* CSS MOBILE */
+@media (max-width: 480px) {
+  .welcome-content {
+    gap: 0;
+  }
+
+  .homepg-s1, .homepg-s2, .homepg-s3, .homepg-s4, .homepg-s5, .homepg-s6, .homepg-s7 {
+    padding: 25px;
+  }
+
+  .welcome-content div h1 {
+    font-size: 3em;
+  }
+
+  .homepg-s1 {
+    padding: 25px;
+  }
+
+  .welcome-content {
+    gap: 0;
+  }
+
+  .page-content h1 {
+    font-size: 4em;
+  }
+
+  .page-content p {
+    font-size: 1.3em;
+  }
+
+  .welcome-content p {
+    font-size: 1.3em;
+  }
+
+  @media (max-width: 768px) {
+    .welcome-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .welcome-content div {
+        max-width: 100%;
+        margin: 0;
+        padding: 10px;
+    }
+
+    .welcome-content h1 {
+        font-size: 1.5em;
+    }
+
+    .welcome-content p {
+        font-size: 1em;
+    }
+  }
+
 }

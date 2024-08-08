@@ -70,3 +70,20 @@
 #botao-registro {
     font-family: 'Gliker Regular', Arial, sans-serif;
 }
+
+@media (max-width: 480px) {
+    #login-div {
+        width: 80%;
+    }
+
+    #register-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #register-div {
+        width: 80%;
+        height: auto;
+    }
+}

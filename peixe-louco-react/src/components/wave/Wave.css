@@ -9,3 +9,21 @@
     fill: url(#waveGradient);
   }
   
+  @media (max-width: 480px) {
+    .wave {
+      display: block;
+      margin: 0;
+      padding: 0;
+      height: auto;
+      overflow: hidden;
+      line-height: 0; 
+  }
+
+  .wave svg {
+      display: block;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: auto;
+  }
+}
