@@ -3,7 +3,7 @@ import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
 import './RegisterPage.css';
 
-function RegisterPage() {
+function RegisterPage() { 
   return (
     <div id="login-body">
       <Header dark />
