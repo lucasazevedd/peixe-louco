@@ -61,7 +61,7 @@ header {
   #nav-button-entrar {
     box-shadow: none;
     font-family: 'Gliker Regular';
-    color: #1A4789;
+    /* color: #1A4789; */
     padding: 1em;
     border-radius: 15px;
   }
@@ -75,15 +75,18 @@ header {
   }
   
   #nav-button-entrar:hover {
-    color: #ffffff;
+    color: #1A4789;
   }
   
   #nav-buttons {
     box-shadow: none;
     font-family: 'Gliker Regular';
-    color: #1A4789;
     padding: 1em;
     border-radius: 15px;
+  }
+
+  #nav-buttons.button2 {
+    color: #1A4789;
   }
   
   #nav-buttons:active {
@@ -94,7 +97,7 @@ header {
     box-shadow: none;
   }
   
-  #nav-buttons:hover {
+  #nav-buttons.button2:hover {
     color: #ffffff;
   }
   
@@ -105,6 +108,77 @@ header {
   .menu-icon {
     display: none;
   }
+
+  /* ESTILOS DOS BOTÕES HEADER */
+.button-header {
+  display: inline-block;
+  transition: all 0.2s ease-in;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  color: #ffffff;
+  padding: 0.7em 1.7em;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 0.5em;
+  background: #1A4789;
+  border: none;
+  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+  width: 100%;
+}
+
+.button-header:active {
+  color: #1A4789;
+  box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
+}
+
+.button-header:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) scaleY(1) scaleX(1.25);
+  top: 100%;
+  width: 140%;
+  height: 180%;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 50%;
+  display: block;
+  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  z-index: -1;
+}
+
+.button-header:after {
+  content: "";
+  position: absolute;
+  left: 55%;
+  transform: translateX(-50%) scaleY(1) scaleX(1.45);
+  top: 180%;
+  width: 160%;
+  height: 190%;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: block;
+  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  z-index: -1;
+}
+
+.button-header:hover {
+  color: #1A4789;
+  border: none;
+}
+
+.button-header:hover:before {
+  top: -35%;
+  background-color: #ffffff;
+  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+.button-header:hover:after {
+  top: -45%;
+  background-color: #ffffff;
+  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
 /* CSS MOBILE */
   @media (max-width: 480px) {
     header {

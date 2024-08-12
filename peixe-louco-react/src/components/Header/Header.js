@@ -46,6 +46,8 @@ function Header() {
   const textColor = backgroundColor !== '#FFFFFF' ? '#FFFFFF' : '#1A4789';
   const imageSrc = getImage(location.pathname, isMobile);
   const barColor = location.pathname === '/login' || location.pathname === '/registro' ? '#FFFFFF' : '#1A4789';
+  const buttonClass = location.pathname === '/login' || location.pathname === '/registro' ? 'button-header' : 'button2';
+
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
@@ -64,12 +66,13 @@ function Header() {
       </div>
       
       <nav id="menu" className={menuOpen ? 'show' : ''}>
-        <Link to="/login"><button className="button2" id="nav-buttons">Entrar</button></Link>
-        <Link to="/registro"><button className="button2" id="nav-buttons">Registrar</button></Link>
-        <Link to="/disciplinas"><button className="button2" id="nav-buttons">Disciplinas</button></Link>
-        <Link to="/apoia"><button className="button2" id="nav-buttons">Apoia-se</button></Link>
-        <Link to="/contato"><button className="button2" id="nav-buttons">Contato</button></Link>
+        <Link to="/login"><button className={buttonClass} id="nav-buttons">Entrar</button></Link>
+        <Link to="/registro"><button className={buttonClass} id="nav-buttons">Registrar</button></Link>
+        <Link to="/disciplinas"><button className={buttonClass} id="nav-buttons">Disciplinas</button></Link>
+        <Link to="/apoia"><button className={buttonClass} id="nav-buttons">Apoia-se</button></Link>
+        <Link to="/contato"><button className={buttonClass} id="nav-buttons">Contato</button></Link>
       </nav>
+
       
       <div className={`menu-icon ${menuOpen ? 'change' : ''}`} onClick={toggleMenu}>
         <div className="bar1" style={{ backgroundColor: barColor }}></div>
