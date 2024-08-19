@@ -1,3 +1,4 @@
+// Deixando só o necessário
 const express = require("express");
 const cors = require('cors');
 
