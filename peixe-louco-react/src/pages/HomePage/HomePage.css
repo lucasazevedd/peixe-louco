@@ -322,6 +322,10 @@
     padding: 25px;
   }
 
+  .buttondisc {
+    margin-bottom: 10vh;
+  }
+
   .welcome-content div h1 {
     font-size: 3em;
   }
