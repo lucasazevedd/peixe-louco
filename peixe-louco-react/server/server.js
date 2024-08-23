@@ -15,6 +15,6 @@ app.use(cors())
 app.use('/api', userRoutes)
 
 // Porta do servidor 
-app.listen(3000, () => {
+app.listen(3001, () => {
   console.log('Servidor ok')
 });
