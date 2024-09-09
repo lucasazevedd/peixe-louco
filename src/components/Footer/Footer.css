@@ -1,0 +1,14 @@
+footer {
+    background-color: #ffffff;
+    color: #1A4789;
+    text-align: center;
+    padding: 1em 0;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+#footer p{
+    font-family: 'Gliker Regular', Arial, sans-serif;
+    font-size: 1em;
+}

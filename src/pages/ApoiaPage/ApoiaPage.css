@@ -1,0 +1,15 @@
+/* Apoia.html */
+#apoia {
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+#apoia h1{
+    font-family: 'Horta', Arial, sans-serif;
+    font-size: 2em;
+}
+
+#apoia p{
+    font-family: 'Gliker Regular', Arial, sans-serif;
+    font-weight: normal;
+}
