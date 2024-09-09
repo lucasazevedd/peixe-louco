@@ -1,0 +1,89 @@
+/* pag de registro*/
+
+#register-box {
+    display: flex;
+    background-color: #1A4789;
+    width: 100%;
+    text-align: left;
+    justify-content: center;
+    min-height: 100vh;
+    color: #ffffff;
+}
+
+#register-div {
+    margin: 40px;
+    box-sizing: border-box;
+    width: 30%;
+    height: 100%;
+}
+
+#register-box h1 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-family: 'Horta', Arial, sans-serif;
+    font-size: 3em;
+    box-sizing: border-box;
+}
+.campos-registro {
+    margin-bottom: 15px;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.campos-registro label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.campos-registro input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+.campos-registro input::placeholder {
+    color: #c2c0c0;
+}
+
+#botao-registro {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: #Cd16bc;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#botao-registro:hover {
+    background-color: #720c68;
+}
+
+#fullname,
+#email,
+#usuario-rg,
+#senha-rg,
+#confirmar-senha,
+#botao-registro {
+    font-family: 'Gliker Regular', Arial, sans-serif;
+}
+
+@media (max-width: 480px) {
+    #login-div {
+        width: 80%;
+    }
+
+    #register-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #register-div {
+        width: 80%;
+        height: auto;
+    }
+}
