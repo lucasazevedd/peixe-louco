@@ -6,6 +6,7 @@ import LucasPhoto from '../../assets/imagens/Lucas-Profile-photo.png';
 import GabrielPhoto from '../../assets/imagens/gabriel-profile-photo.png';
 import RyanPhoto from '../../assets/imagens/ryan-profile-photo.png';
 import LaisPhoto from '../../assets/imagens/lais-profile-photo.png';
+import LeticiaPhoto from '../../assets/imagens/leticia-profile-photo.png';
 import { Helmet } from 'react-helmet';
 import './ContactPage.css';
 
@@ -118,6 +119,29 @@ function ContactPage() {
                     <button className="button2" id="githubButton">GitHub <i className="fab fa-github"></i></button>
                   </a>
                   <a href="https://www.instagram.com/laisgbr/" target="_blank" rel="noopener noreferrer">
+                    <button className="button2" id="instagramButton">Instagram <i className="fab fa-instagram"></i></button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="flip-card">
+            <div className="flip-card-inner">
+              <div className="flip-card-front">
+                <img src={LeticiaPhoto} alt="Foto do Desenvolvedor" />
+                <h3>Letícia Ferreira do Nascimento</h3>
+                <p>Desenvolvedor Full-Stack</p>
+              </div>
+              <div className="flip-card-back">
+                <div className="social-links">
+                  <a href="https://www.linkedin.com/in/let%C3%ADcia-ferr-nasc/?locale=pt_BR" target="_blank" rel="noopener noreferrer">
+                    <button className="button2" id="linkedinButton">Linkedin <i className="fab fa-linkedin"></i></button>
+                  </a>
+                  <a href="https://github.com/laisdiasdev" target="_blank" rel="noopener noreferrer">
+                    <button className="button2" id="githubButton">GitHub <i className="fab fa-github"></i></button>
+                  </a>
+                  <a href="https://www.instagram.com/lelenassc/" target="_blank" rel="noopener noreferrer">
                     <button className="button2" id="instagramButton">Instagram <i className="fab fa-instagram"></i></button>
                   </a>
                 </div>
